@@ -1,0 +1,31 @@
+.topbar-user {
+  > button {
+    display: flex;
+    gap: var(--size-sm);
+
+    padding: 0;
+
+    font-size: 0;
+
+    > picture {
+      > img {
+        height: var(--size-xl);
+        aspect-ratio: 1;
+
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    > .text-wrapper {
+      > * {
+        max-width: calc(var(--size-md) * 10);
+        padding: var(--size-smd) 0;
+        overflow: hidden;
+
+        text-overflow: '-- [...]';
+        white-space: nowrap;
+      }
+    }
+  }
+}

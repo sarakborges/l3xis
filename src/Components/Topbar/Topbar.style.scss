@@ -1,0 +1,28 @@
+.topbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99;
+
+  display: flex;
+  place-content: center;
+
+  background-color: var(--color-main);
+
+  .topbar-body {
+    display: flex;
+    place-items: center;
+    place-content: space-between;
+
+    width: var(--body-wrapper-size);
+
+    .logo {
+      color: var(--color-white);
+    }
+
+    .topbar-right {
+      display: flex;
+      place-items: center;
+    }
+  }
+}
