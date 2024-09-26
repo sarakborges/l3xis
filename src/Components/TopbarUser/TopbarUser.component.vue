@@ -12,7 +12,7 @@ const { profileData } = ActiveProfileStore
 <template>
   <section class="topbar-user" v-if="profileData?.id">
     <Button secondary>
-      <Text>{{ profileData.name }}</Text>
+      <Text as="span">{{ profileData.name }}</Text>
 
       <picture>
         <img :src="profileData.picture" />

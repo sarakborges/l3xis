@@ -1,6 +1,7 @@
 .topbar-user {
   > button {
     display: flex;
+    place-items: center;
     gap: var(--size-sm);
 
     padding: 0;
@@ -18,14 +19,12 @@
     }
 
     > .text-wrapper {
-      > * {
-        max-width: calc(var(--size-md) * 10);
-        padding: var(--size-smd) 0;
-        overflow: hidden;
+      max-width: calc(var(--size-md) * 10);
+      padding: var(--size-smd) 0;
+      overflow: hidden;
 
-        text-overflow: '-- [...]';
-        white-space: nowrap;
-      }
+      text-overflow: '-- [...]';
+      white-space: nowrap;
     }
   }
 }

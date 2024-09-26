@@ -5,5 +5,5 @@ import Topbar from '@/Components/Topbar/Topbar.component.vue'
 </script>
 
 <template>
-  <Topbar />
+  <div id="home-page"><Topbar /></div>
 </template>

@@ -1,21 +1,29 @@
-<style src="./Text.style.scss" lang="sass" />
+<style src="./Text.style.scss" lang="sass" scoped />
 
 <script setup lang="ts">
-import { useSlots } from 'vue'
-
-const slots = useSlots()
-const children = slots.default?.()[0].children
-
 const { as } = defineProps<{
-  as?: 'h1' | 'h2' | 'h3' | 'p'
+  as?: 'h1' | 'h2' | 'h3' | 'p' | 'span'
 }>()
-
-const asTags = {
-  p: `<p>${children}</p>`,
-  h1: `<h1>${children}</h1>`,
-  h2: `<h2>${children}</h2>`,
-  h3: `<h3>${children}</h3>`
-}
 </script>
 
-<template><div class="text-wrapper" v-html="asTags[as || 'p']" /></template>
+<template>
+  <p v-if="Boolean(as === 'p' || !as)" class="text-wrapper">
+    <slot />
+  </p>
+
+  <h1 v-if="Boolean(as === 'h1')" class="text-wrapper">
+    <slot />
+  </h1>
+
+  <h2 v-if="Boolean(as === 'h2')" class="text-wrapper">
+    <slot />
+  </h2>
+
+  <h3 v-if="Boolean(as === 'h3')" class="text-wrapper">
+    <slot />
+  </h3>
+
+  <span v-if="Boolean(as === 'span')" class="text-wrapper">
+    <slot />
+  </span>
+</template>
