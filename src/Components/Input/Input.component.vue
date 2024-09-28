@@ -13,6 +13,7 @@ const { type, disabled } = defineProps<{
   <input
     class="input"
     :type="type || 'text'"
+    :id="name"
     :name="name"
     :placeholder="placeholder"
     :disabled="disabled"

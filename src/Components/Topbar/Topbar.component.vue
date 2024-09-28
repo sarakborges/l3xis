@@ -5,6 +5,7 @@ import { APP_NAME } from '@/Utils/Texts/App.texts'
 
 import Text from '@/Components/Text/Text.component.vue'
 import TopbarMenu from '@/Components/TopbarMenu/TopbarMenu.component.vue'
+import TopbarSearch from '@/Components/TopbarSearch/TopbarSearch.component.vue'
 import TopbarUser from '@/Components/TopbarUser/TopbarUser.component.vue'
 
 import ActiveProfileStore from '@/Stores/ActiveProfile.store'
@@ -16,8 +17,9 @@ await getProfileData('hope')
 <template>
   <header class="topbar">
     <div class="topbar-body">
-      <aside class="logo">
+      <aside class="topbar-left">
         <Text as="p">{{ APP_NAME }}</Text>
+        <TopbarSearch />
       </aside>
 
       <section class="topbar-right">

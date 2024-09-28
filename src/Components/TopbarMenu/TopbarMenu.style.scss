@@ -9,8 +9,11 @@
 
       > a {
         display: flex;
+        place-items: center;
+        place-content: center;
 
-        padding: var(--size-smd);
+        width: var(--size-xl);
+        height: var(--size-xl);
 
         color: var(--color-white);
 

@@ -1,0 +1,16 @@
+.topbar-search {
+  > form {
+    display: flex;
+    place-items: center;
+
+    > input {
+      height: var(--size-xl);
+    }
+
+    > button {
+      height: var(--size-xl);
+
+      font-size: 0;
+    }
+  }
+}

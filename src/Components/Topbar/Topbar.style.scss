@@ -15,8 +15,14 @@
     place-content: space-between;
 
     width: var(--body-wrapper-size);
+    padding-left: var(--size-lmd);
+    max-width: 100%;
 
-    .logo {
+    .topbar-left {
+      display: flex;
+      place-items: center;
+      gap: var(--size-lmd);
+
       color: var(--color-white);
     }
 
