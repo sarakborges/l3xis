@@ -1,25 +1,29 @@
 .topbar-user {
+  height: var(--size-xl);
+
   > button {
     display: flex;
     place-items: center;
 
-    padding: 0;
+    height: 100%;
+    padding: 0 var(--size-sm);
 
     font-size: 0;
 
     > picture {
       > img {
-        height: var(--size-xl);
+        height: var(--size-lg);
         aspect-ratio: 1;
 
         object-fit: cover;
         object-position: center;
+        border-radius: 100%;
       }
     }
 
-    > .text-wrapper {
+    > :is(span) {
       max-width: calc(var(--size-md) * 10);
-      padding: var(--size-smd) 0;
+      padding: 0 var(--size-md);
       overflow: hidden;
 
       text-overflow: '-- [...]';
