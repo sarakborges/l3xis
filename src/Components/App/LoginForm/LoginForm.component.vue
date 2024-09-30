@@ -8,10 +8,10 @@ import router from '@/Utils/Router/Router'
 
 import { LOGIN_TEXTS } from '@/Utils/Texts/Login.texts.ts'
 
-import Text from '@/Components/Text/Text.component.vue'
-import Link from '@/Components/Link/Link.component.vue'
-import Button from '@/Components/Button/Button.component.vue'
-import Input from '@/Components/Input/Input.component.vue'
+import Text from '@/Components/DesignSystem/Text/Text.component.vue'
+import Link from '@/Components/DesignSystem/Link/Link.component.vue'
+import Button from '@/Components/DesignSystem/Button/Button.component.vue'
+import Input from '@/Components/DesignSystem/Input/Input.component.vue'
 
 const formName = 'login-form'
 

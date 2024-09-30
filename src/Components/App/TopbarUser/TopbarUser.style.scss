@@ -29,11 +29,5 @@
       text-overflow: '-- [...]';
       white-space: nowrap;
     }
-
-    @media (max-width: calc(320px)) {
-      > :is(span) {
-        display: none;
-      }
-    }
   }
 }

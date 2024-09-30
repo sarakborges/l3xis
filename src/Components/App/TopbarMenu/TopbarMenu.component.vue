@@ -3,7 +3,7 @@
 <script setup lang="ts">
 import { TOPBAR_MENU } from '@/Utils/Data/Topbar.data'
 
-import Link from '@/Components/Link/Link.component.vue'
+import Link from '@/Components/DesignSystem/Link/Link.component.vue'
 </script>
 
 <template>

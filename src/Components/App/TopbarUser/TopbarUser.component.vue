@@ -3,8 +3,8 @@
 <script setup lang="ts">
 import ActiveProfileStore from '@/Stores/ActiveProfile.store'
 
-import Button from '@/Components/Button/Button.component.vue'
-import Text from '@/Components/Text/Text.component.vue'
+import Button from '@/Components/DesignSystem/Button/Button.component.vue'
+import Text from '@/Components/DesignSystem/Text/Text.component.vue'
 
 const { profileData } = ActiveProfileStore
 </script>

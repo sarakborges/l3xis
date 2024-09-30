@@ -3,10 +3,11 @@
 <script setup lang="ts">
 import { APP_NAME } from '@/Utils/Texts/App.texts'
 
-import Text from '@/Components/Text/Text.component.vue'
-import TopbarMenu from '@/Components/TopbarMenu/TopbarMenu.component.vue'
-import TopbarSearch from '@/Components/TopbarSearch/TopbarSearch.component.vue'
-import TopbarUser from '@/Components/TopbarUser/TopbarUser.component.vue'
+import Text from '@/Components/DesignSystem/Text/Text.component.vue'
+
+import TopbarMenu from '@/Components/App/TopbarMenu/TopbarMenu.component.vue'
+import TopbarSearch from '@/Components/App/TopbarSearch/TopbarSearch.component.vue'
+import TopbarUser from '@/Components/App/TopbarUser/TopbarUser.component.vue'
 
 import ActiveProfileStore from '@/Stores/ActiveProfile.store'
 

@@ -4,6 +4,7 @@
     place-items: center;
 
     > input {
+      width: calc(var(--size-xl) * 6);
       height: var(--size-xl);
     }
 

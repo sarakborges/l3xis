@@ -3,8 +3,8 @@
 <script setup lang="ts">
 import { TOPBAR_SEARCH_PLACEHOLDER } from '@/Utils/Texts/App.texts'
 
-import Input from '@/Components/Input/Input.component.vue'
-import Button from '@/Components/Button/Button.component.vue'
+import Input from '@/Components/DesignSystem/Input/Input.component.vue'
+import Button from '@/Components/DesignSystem/Button/Button.component.vue'
 
 const doSearch = (e: Event) => {
   e.preventDefault()
