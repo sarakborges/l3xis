@@ -1,7 +1,7 @@
 .home-user-info {
   display: flex;
   flex-flow: column;
-  gap: var(--size-smd);
+  gap: var(--size-md);
 
   width: calc(var(--size-xl) * 4);
 
@@ -24,6 +24,17 @@
 
     > :nth-child(2) {
       font-size: var(--size-smd);
+    }
+  }
+
+  > .edit-profile {
+    display: flex;
+
+    font-size: var(--size-smd);
+
+    > button {
+      width: 100%;
+      padding: var(--size-smd);
     }
   }
 }
