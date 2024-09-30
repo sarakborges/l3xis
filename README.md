@@ -1,5 +1,11 @@
-# Vue 3 + TypeScript + Vite
+This project is meant to be a way for me to study VueJS while I'm unemployed and bored. Do not expect any consistency between time spent, or even any gitflow patterns, as I just code without thinking too much on what I am doing for the time being.
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This project employs:
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+- Vite
+- VueJS
+- Typescript
+- SCSS
+- My meticulous way of thinking directories and organization.
+
+Also, this is a redesign based on l3xis (https://l3xis.net/).
