@@ -1,8 +1,29 @@
 .link {
-  color: var(--color-link);
   text-decoration: none;
 
-  &:hover {
-    text-decoration: underline;
+  &:not(.button) {
+    color: var(--color-link);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &.button {
+    display: flex;
+    place-items: center;
+    place-content: center;
+
+    padding: var(--size-md);
+
+    background-color: var(--color-main);
+    transition: background-color 0.3s;
+
+    line-height: 1;
+    color: var(--color-white);
+
+    &:hover {
+      background-color: var(--color-main-dark);
+    }
   }
 }

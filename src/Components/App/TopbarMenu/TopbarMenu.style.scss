@@ -8,21 +8,10 @@
       place-items: center;
 
       > a {
-        display: flex;
-        place-items: center;
-        place-content: center;
-
         width: var(--size-xl);
         height: var(--size-xl);
 
         color: var(--color-white);
-
-        transition: background-color 0.3s;
-
-        &:hover {
-          text-decoration: none;
-          background-color: var(--color-main-dark);
-        }
 
         > svg {
           width: var(--size-lmd);

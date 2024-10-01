@@ -6,9 +6,14 @@ import { RouteRecordNameGeneric } from 'vue-router'
 const { name, params } = defineProps<{
   name: RouteRecordNameGeneric
   params?: any
+  button?: boolean
 }>()
 </script>
 
 <template>
-  <RouterLink class="link" :to="{ name, params }"><slot></slot></RouterLink>
+  <RouterLink
+    :class="['link', Boolean(button) ? 'button' : ''].join(' ')"
+    :to="{ name, params }"
+    ><slot></slot
+  ></RouterLink>
 </template>

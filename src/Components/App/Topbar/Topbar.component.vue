@@ -11,8 +11,8 @@ import TopbarUser from '@/Components/App/TopbarUser/TopbarUser.component.vue'
 
 import ActiveProfileStore from '@/Stores/ActiveProfile.store'
 
-const { getProfileData } = ActiveProfileStore
-await getProfileData('hope')
+const { getActiveProfileData } = ActiveProfileStore
+await getActiveProfileData('hope')
 </script>
 
 <template>

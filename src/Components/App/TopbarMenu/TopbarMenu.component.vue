@@ -10,7 +10,7 @@ import Link from '@/Components/DesignSystem/Link/Link.component.vue'
   <nav class="topbar-menu">
     <ul>
       <li v-for="menu_item in TOPBAR_MENU">
-        <Link :name="menu_item.TO" :title="menu_item.TEXT">
+        <Link :name="menu_item.TO" :title="menu_item.TEXT" button>
           <v-icon :name="menu_item.ICON" />
         </Link>
       </li>

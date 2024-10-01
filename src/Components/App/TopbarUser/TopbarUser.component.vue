@@ -5,14 +5,14 @@ import ActiveProfileStore from '@/Stores/ActiveProfile.store'
 
 import Button from '@/Components/DesignSystem/Button/Button.component.vue'
 
-const { profileData } = ActiveProfileStore
+const { activeProfileData } = ActiveProfileStore
 </script>
 
 <template>
-  <section class="topbar-user" v-if="profileData?.id">
+  <section class="topbar-user" v-if="activeProfileData?.id">
     <Button>
       <picture>
-        <img :src="profileData.picture" />
+        <img :src="activeProfileData.picture" />
       </picture>
     </Button>
   </section>

@@ -1,0 +1,46 @@
+.home-user {
+  display: flex;
+  flex-flow: column;
+  gap: var(--size-md);
+
+  width: calc(var(--size-xl) * 4);
+
+  > .home-user-picture {
+    padding: var(--size-xs);
+
+    border-radius: var(--size-xs);
+    border: 1px solid var(--color-main-light);
+
+    font-size: 0;
+  }
+
+  > .home-user-info {
+    display: flex;
+    flex-flow: column;
+    gap: var(--size-md);
+
+    > .home-user-name {
+      display: flex;
+      flex-flow: column;
+      place-items: center;
+      gap: var(--size-sm);
+
+      color: var(--color-white);
+
+      > :nth-child(2) {
+        font-size: var(--size-smd);
+      }
+    }
+
+    > .profile-actions {
+      > button {
+        width: 100%;
+        padding: var(--size-smd);
+      }
+
+      > a {
+        padding: var(--size-smd);
+      }
+    }
+  }
+}
