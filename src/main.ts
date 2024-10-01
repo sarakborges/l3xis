@@ -8,12 +8,13 @@ import {
   BiEnvelopeFill,
   BiBellFill,
   FaCog,
-  FaSearch
+  FaSearch,
+  BiCameraFill
 } from 'oh-vue-icons/icons'
 
 import router from '@/Utils/Router/Router'
 
-import AppTemplate from '@/Templates/App/App.vue'
+import AppTemplate from '@/Templates/App/App.template.vue'
 
 addIcons(
   FaHome,
@@ -22,7 +23,8 @@ addIcons(
   BiEnvelopeFill,
   BiBellFill,
   FaCog,
-  FaSearch
+  FaSearch,
+  BiCameraFill
 )
 
 createApp(AppTemplate).component('v-icon', OhVueIcon).use(router).mount('#app')

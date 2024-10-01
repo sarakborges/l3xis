@@ -1,4 +1,4 @@
-import { ROUTE_NAMES } from '@/Utils/Data/RouteNames'
+import { ROUTE_NAMES } from '@/Utils/Data/RouteNames.data'
 
 export const TOPBAR_MENU = [
   {
@@ -10,7 +10,7 @@ export const TOPBAR_MENU = [
   {
     ICON: 'bi-person-fill',
     TEXT: `My profile`,
-    TO: ROUTE_NAMES.HOME
+    TO: ROUTE_NAMES.PROFILE
   },
 
   {
@@ -22,12 +22,6 @@ export const TOPBAR_MENU = [
   {
     ICON: 'bi-bell-fill',
     TEXT: `Notifications`,
-    TO: ROUTE_NAMES.HOME
-  },
-
-  {
-    ICON: 'co-list-rich',
-    TEXT: `Profiles list`,
     TO: ROUTE_NAMES.HOME
   }
 ]

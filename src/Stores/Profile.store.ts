@@ -7,9 +7,9 @@ import ProfileApi from '@/Apis/Profile.api'
 let profileData = ref()
 let isLoading = ref(false)
 
-const getProfileData = async (id: string) => {
+const getProfileData = async (url: string) => {
   isLoading.value = true
-  const profileReq = await ProfileApi.getById(id)
+  const profileReq = await ProfileApi.getByUrl(url)
 
   profileData.value = profileReq?.results
   isLoading.value = false

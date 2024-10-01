@@ -3,23 +3,20 @@
 <script setup lang="ts">
 import { APP_NAME } from '@/Utils/Texts/App.texts'
 
-import Text from '@/Components/DesignSystem/Text/Text.component.vue'
+import { ROUTE_NAMES } from '@/Utils/Data/RouteNames.data'
+
+import Link from '@/Components/DesignSystem/Link/Link.component.vue'
 
 import TopbarMenu from '@/Components/App/TopbarMenu/TopbarMenu.component.vue'
 import TopbarSearch from '@/Components/App/TopbarSearch/TopbarSearch.component.vue'
 import TopbarUser from '@/Components/App/TopbarUser/TopbarUser.component.vue'
-
-import ActiveProfileStore from '@/Stores/ActiveProfile.store'
-
-const { getActiveProfileData } = ActiveProfileStore
-await getActiveProfileData('hope')
 </script>
 
 <template>
   <header class="topbar">
     <div class="topbar-body">
       <aside class="topbar-left">
-        <Text as="p">{{ APP_NAME }}</Text>
+        <Link :name="ROUTE_NAMES.HOME" button>{{ APP_NAME }}</Link>
         <TopbarSearch />
       </aside>
 

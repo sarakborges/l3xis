@@ -42,5 +42,32 @@
         padding: var(--size-smd);
       }
     }
+
+    .profile-pages {
+      > ul {
+        display: flex;
+        flex-flow: column;
+        gap: var(--size-sm);
+
+        > li {
+          > a {
+            display: inline-flex;
+            place-items: center;
+            gap: var(--size-sm);
+
+            color: var(--color-white);
+
+            > svg {
+              width: var(--size-lmd);
+              height: var(--size-lmd);
+            }
+
+            &.active {
+              color: var(--color-main-light);
+            }
+          }
+        }
+      }
+    }
   }
 }

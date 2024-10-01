@@ -28,6 +28,28 @@ const getById = async (id: string): Promise<RequestResultType<ProfileType>> => {
   }
 }
 
+const getByUrl = async (
+  url: string
+): Promise<RequestResultType<ProfileType>> => {
+  const profile = await simpleRequest({
+    req: profileMock
+  })
+
+  const profileData = profile.results.find(
+    (mockItem: ProfileType) => mockItem?.url === url
+  )
+
+  if (!Boolean(profileData)) {
+    return {
+      results: undefined
+    }
+  }
+
+  return {
+    results: profileData
+  }
+}
+
 const getAll = async (
   page?: number
 ): Promise<PaginatedRequestResultType<ProfileType[]>> => {
@@ -43,5 +65,6 @@ const getAll = async (
 
 export default {
   getById,
-  getAll
+  getAll,
+  getByUrl
 }
