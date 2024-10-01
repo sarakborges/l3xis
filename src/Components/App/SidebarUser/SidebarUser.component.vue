@@ -2,6 +2,8 @@
 
 <script setup lang="ts">
 import { SIDEBAR_EDIT_PROFILE, SIDEBAR_VIEW_PROFILE } from './SidebarUser.texts'
+import { SIDEBAR_MENU } from './SidebarUser.data'
+
 import { HOME } from '@/Utils/Router/Routes'
 
 import Text from '@/Components/DesignSystem/Text/Text.component.vue'
@@ -36,6 +38,17 @@ const { activeProfileData } = ActiveProfileStore
         <Link :name="HOME.name" button>{{ SIDEBAR_VIEW_PROFILE }}</Link>
         <Button secondary>{{ SIDEBAR_EDIT_PROFILE }}</Button>
       </section>
+
+      <nav v-if="profileData?.id !== activeProfileData?.id">
+        <ul>
+          <li v-for="menu_item in SIDEBAR_MENU">
+            <Link :name="menu_item.TO">
+              <v-icon :name="menu_item.ICON" />
+              <Text as="span">{{ menu_item.TEXT }}</Text>
+            </Link>
+          </li>
+        </ul>
+      </nav>
     </main>
   </aside>
 

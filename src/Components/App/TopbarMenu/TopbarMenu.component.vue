@@ -1,7 +1,7 @@
 <style src="./TopbarMenu.style.scss" lang="sass" scoped />
 
 <script setup lang="ts">
-import { TOPBAR_MENU } from '@/Utils/Router/Routes'
+import { TOPBAR_MENU } from './TopbarMenu.data'
 
 import Link from '@/Components/DesignSystem/Link/Link.component.vue'
 </script>
