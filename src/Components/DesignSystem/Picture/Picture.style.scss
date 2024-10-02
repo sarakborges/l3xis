@@ -1,0 +1,24 @@
+.picture {
+  > img {
+    max-width: 100%;
+
+    &.rounded {
+      border-radius: 100%;
+    }
+
+    &.centered {
+      object-fit: cover;
+      object-position: center;
+    }
+
+    &.roundedSquare {
+      padding: var(--size-xs);
+
+      background-color: var(--color-main-dark);
+      border: 1px solid var(--color-main-light);
+      border-radius: var(--size-xs);
+
+      font-size: 0;
+    }
+  }
+}

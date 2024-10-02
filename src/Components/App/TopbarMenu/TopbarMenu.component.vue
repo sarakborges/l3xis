@@ -7,6 +7,7 @@ import { ROUTE_NAMES } from '@/Utils/Data/RouteNames.data'
 
 import ActiveProfileStore from '@/Stores/ActiveProfile.store'
 
+import Tooltip from '@/Components/DesignSystem/Tooltip/Tooltip.component.vue'
 import Link from '@/Components/DesignSystem/Link/Link.component.vue'
 
 const { activeProfileData } = ActiveProfileStore
@@ -28,6 +29,8 @@ const { activeProfileData } = ActiveProfileStore
         >
           <v-icon :name="menu_item.ICON" />
         </Link>
+
+        <Tooltip>{{ menu_item.TEXT }}</Tooltip>
       </li>
     </ul>
   </nav>

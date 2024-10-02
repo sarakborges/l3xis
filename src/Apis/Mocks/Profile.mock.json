@@ -4,14 +4,172 @@
     "name": "hope.",
     "url": "hopyumm",
     "picture": "https://l3xis.net/files/user/dfd988fb224a3b49fde0aa258d5890b9da139376f1772f1d05e167a80fdcd121/avatar/8b49158f2f8e699a5bbcc7c06e620899.png",
-    "createdAt": "2024-09-30"
+    "createdAt": "2024-09-30",
+
+    "friends": [
+      { "id": "satoru" },
+      { "id": "sukuna" },
+      { "id": "yuji" },
+      { "id": "megumi" },
+      { "id": "toji" },
+      { "id": "choso" },
+      { "id": "nobara" },
+      { "id": "kenjaku" },
+      { "id": "nanami" },
+      { "id": "mahito" }
+    ],
+
+    "groups": [{ "id": "jujutsu-kaizen" }]
   },
 
   {
-    "id": "doom",
-    "name": "doom.",
-    "url": "doomyumm",
-    "picture": "https://l3xis.net/files/user/7bc8fac9dd049b072af2bd47a3fa3ba95174bd27e8ada8849dc22e02bd69959f/avatar/8b45ec2cb1d8e4c9c5b69dcd8ec29402.png",
-    "createdAt": "2024-09-30"
+    "id": "yuji",
+    "name": "yuji.",
+    "url": "yuji",
+    "picture": "https://i.pinimg.com/736x/20/d1/ac/20d1ac5b213917c77b2c6035331e89b6.jpg",
+    "createdAt": "2024-09-30",
+
+    "friends": [
+      { "id": "hope" },
+      { "id": "sukuna" },
+      { "id": "satoru" },
+      { "id": "megumi" },
+      { "id": "choso" },
+      { "id": "nobara" },
+      { "id": "nanami" },
+      { "id": "mahito" }
+    ]
+  },
+
+  {
+    "id": "satoru",
+    "name": "satoru.",
+    "url": "o-sensei-gatinho-satoru-gojo",
+    "picture": "https://l3xis.net/files/user/45200c500f11d6fe771b927b1b4c880df21c0cb32c8ff599f6cb0a31f45b6e81/avatar/4954adaedfa1dba4f2c7919114e63695.png",
+    "createdAt": "2024-09-30",
+
+    "friends": [
+      { "id": "hope" },
+      { "id": "yuji" },
+      { "id": "megumi" },
+      { "id": "sukuna" },
+      { "id": "toji" },
+      { "id": "nobara" },
+      { "id": "kenjaku" },
+      { "id": "nanami" }
+    ]
+  },
+
+  {
+    "id": "nobara",
+    "name": "nobara",
+    "url": "nobara",
+    "picture": "https://i.pinimg.com/736x/15/34/ec/1534ec4c721940bdf22fbd664f2620c4.jpg",
+    "createdAt": "2024-09-30",
+
+    "friends": [
+      { "id": "hope" },
+      { "id": "yuji" },
+      { "id": "megumi" },
+      { "id": "satoru" }
+    ]
+  },
+
+  {
+    "id": "megumi",
+    "name": "megumi",
+    "url": "megumi",
+    "picture": "https://i.pinimg.com/564x/be/7b/68/be7b683c9972d3fb12f14c5468c708f0.jpg",
+    "createdAt": "2024-09-30",
+
+    "friends": [
+      { "id": "hope" },
+      { "id": "yuji" },
+      { "id": "satoru" },
+      { "id": "toji" },
+      { "id": "nobara" }
+    ]
+  },
+
+  {
+    "id": "sukuna",
+    "name": "sukuna",
+    "url": "sukuna",
+    "picture": "https://i.pinimg.com/564x/74/ad/ef/74adef28d88e96dbea38e7e62afda2da.jpg",
+    "createdAt": "2024-09-30",
+
+    "friends": [{ "id": "hope" }, { "id": "satoru" }, { "id": "yuji" }]
+  },
+
+  {
+    "id": "toji",
+    "name": "toji",
+    "url": "toji",
+    "picture": "https://i.pinimg.com/736x/34/31/8e/34318eb2f7f2a616a6bca5665b0feb83.jpg",
+    "createdAt": "2024-09-30",
+
+    "friends": [{ "id": "hope" }, { "id": "satoru" }, { "id": "megumi" }]
+  },
+
+  {
+    "id": "choso",
+    "name": "choso",
+    "url": "choso",
+    "picture": "https://i.pinimg.com/564x/ba/f2/12/baf212624c558e72aaa9127fc5a89963.jpg",
+    "createdAt": "2024-09-30",
+
+    "friends": [
+      { "id": "hope" },
+      { "id": "yuji" },
+      { "id": "kenjaku" },
+      { "id": "mahito" }
+    ]
+  },
+
+  {
+    "id": "kenjaku",
+    "name": "kenjaku",
+    "url": "kenjaku",
+    "picture": "https://i.pinimg.com/736x/4d/ff/37/4dff37881a8616b32643abe8b32f47f4.jpg",
+    "createdAt": "2024-09-30",
+
+    "friends": [
+      { "id": "hope" },
+      { "id": "yuji" },
+      { "id": "satoru" },
+      { "id": "choso" },
+      { "id": "mahito" }
+    ]
+  },
+
+  {
+    "id": "nanami",
+    "name": "nanami",
+    "url": "nanami",
+    "picture": "https://i.pinimg.com/564x/97/a9/a1/97a9a1ac66f6fb4a6432496e56c64ca5.jpg",
+    "createdAt": "2024-09-30",
+
+    "friends": [
+      { "id": "hope" },
+      { "id": "yuji" },
+      { "id": "satoru" },
+      { "id": "mahito" }
+    ]
+  },
+
+  {
+    "id": "mahito",
+    "name": "mahito",
+    "url": "mahito",
+    "picture": "https://i.pinimg.com/564x/73/72/9a/73729a9398d6d11feefa704fac62599b.jpg",
+    "createdAt": "2024-09-30",
+
+    "friends": [
+      { "id": "hope" },
+      { "id": "yuji" },
+      { "id": "nanami" },
+      { "id": "kenjaku" },
+      { "id": "choso" }
+    ]
   }
 ]

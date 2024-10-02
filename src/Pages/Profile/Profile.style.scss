@@ -13,5 +13,15 @@
 
     width: var(--body-wrapper-size);
     padding: 0 var(--size-md);
+
+    > main {
+      flex: 1;
+    }
+
+    .profile-lists {
+      display: flex;
+      flex-flow: column;
+      gap: var(--size-lg);
+    }
   }
 }

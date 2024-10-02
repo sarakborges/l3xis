@@ -1,9 +1,9 @@
 <style src="./Text.style.scss" lang="sass" scoped />
 
 <script setup lang="ts">
-const { as } = defineProps<{
-  as?: 'h1' | 'h2' | 'h3' | 'p' | 'span'
-}>()
+import { TextType } from './Text.type'
+
+const { as } = defineProps<TextType>()
 </script>
 
 <template>

@@ -1,13 +1,9 @@
 <style src="./Button.style.scss" lang="sass" scoped />
 
 <script setup lang="ts">
-const { type, disabled } = defineProps<{
-  type?: 'button' | 'submit' | 'reset'
-  primary?: boolean
-  secondary?: boolean
-  disabled?: boolean
-  form?: string
-}>()
+import { ButtonType } from './Button.type'
+
+const { type, disabled } = defineProps<ButtonType>()
 </script>
 
 <template>
@@ -23,6 +19,6 @@ const { type, disabled } = defineProps<{
     :form="form"
     :disabled="disabled"
   >
-    <slot></slot>
+    <slot />
   </button>
 </template>

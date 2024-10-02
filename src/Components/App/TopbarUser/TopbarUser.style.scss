@@ -11,13 +11,9 @@
     font-size: 0;
 
     > picture {
-      > img {
+      > :is(img) {
         height: var(--size-lg);
         aspect-ratio: 1;
-
-        object-fit: cover;
-        object-position: center;
-        border-radius: 100%;
       }
     }
   }

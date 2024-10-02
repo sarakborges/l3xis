@@ -3,6 +3,7 @@
 <script setup lang="ts">
 import ActiveProfileStore from '@/Stores/ActiveProfile.store'
 
+import Picture from '@/Components/DesignSystem/Picture/Picture.component.vue'
 import Button from '@/Components/DesignSystem/Button/Button.component.vue'
 
 const { activeProfileData } = ActiveProfileStore
@@ -11,9 +12,12 @@ const { activeProfileData } = ActiveProfileStore
 <template>
   <section class="topbar-user" v-if="activeProfileData?.id">
     <Button>
-      <picture>
-        <img :src="activeProfileData.picture" />
-      </picture>
+      <Picture
+        :src="activeProfileData.picture"
+        :alt="activeProfileData.name"
+        rounded
+        centered
+      />
     </Button>
   </section>
 </template>

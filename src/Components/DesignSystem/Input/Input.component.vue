@@ -1,12 +1,9 @@
 <style src="./Input.style.scss" lang="sass" scoped />
 
 <script setup lang="ts">
-const { type, disabled } = defineProps<{
-  type?: 'text' | 'password' | 'number'
-  placeholder?: string
-  disabled?: boolean
-  name: string
-}>()
+import { InputType } from './Input.type'
+
+const { type, disabled } = defineProps<InputType>()
 </script>
 
 <template>

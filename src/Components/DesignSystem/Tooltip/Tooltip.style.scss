@@ -1,0 +1,37 @@
+.tooltip {
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  z-index: 1;
+
+  display: flex;
+  place-items: center;
+
+  margin-top: -16px;
+
+  opacity: 0;
+  visibility: hidden;
+  cursor: default;
+
+  > :is(span) {
+    padding: var(--size-sm);
+
+    background-color: var(--color-black);
+    border-radius: var(--size-sm);
+
+    color: var(--color-white);
+    text-wrap: nowrap;
+  }
+
+  &:after {
+    content: '';
+
+    border: var(--size-sm) solid transparent;
+    border-left-color: var(--color-black);
+  }
+
+  *:hover + & {
+    opacity: 1;
+    visibility: visible;
+  }
+}

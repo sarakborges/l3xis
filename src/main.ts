@@ -9,7 +9,8 @@ import {
   BiBellFill,
   FaCog,
   FaSearch,
-  BiCameraFill
+  BiCameraFill,
+  MdMorehoriz
 } from 'oh-vue-icons/icons'
 
 import router from '@/Utils/Router/Router'
@@ -24,7 +25,8 @@ addIcons(
   BiBellFill,
   FaCog,
   FaSearch,
-  BiCameraFill
+  BiCameraFill,
+  MdMorehoriz
 )
 
 createApp(AppTemplate).component('v-icon', OhVueIcon).use(router).mount('#app')

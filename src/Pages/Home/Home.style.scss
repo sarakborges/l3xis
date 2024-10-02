@@ -13,5 +13,11 @@
 
     width: var(--body-wrapper-size);
     padding: 0 var(--size-md);
+
+    .home-lists {
+      display: flex;
+      flex-flow: column;
+      gap: var(--size-lg);
+    }
   }
 }
