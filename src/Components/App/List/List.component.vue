@@ -1,7 +1,7 @@
 <style src="./List.style.scss" lang="sass" scoped />
 
 <script setup lang="ts">
-import { ListType } from './List.type'
+import { ListComponentType } from './List.type'
 
 import ActiveProfileStore from '@/Stores/ActiveProfile.store'
 
@@ -15,9 +15,9 @@ const {
   emptyText,
   moreText,
   list,
-  maxItems = 8,
+  maxItems = 9,
   linkTo
-} = defineProps<ListType>()
+} = defineProps<ListComponentType>()
 const { activeProfileData } = ActiveProfileStore
 </script>
 
@@ -32,7 +32,7 @@ const { activeProfileData } = ActiveProfileStore
             :src="listItem.picture"
             :alt="listItem.title"
             centered
-            roundedSquare
+            roundedEdges
           />
         </Link>
 

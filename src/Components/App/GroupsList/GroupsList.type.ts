@@ -1,6 +1,3 @@
-import { GroupType } from '@/Utils/Types/Group.type'
-
-export type GroupsListType = {
+export type GroupsListComponentType = {
   isHome?: boolean
-  groups: Array<GroupType>
 }

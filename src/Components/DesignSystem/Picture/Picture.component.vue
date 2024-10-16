@@ -1,10 +1,10 @@
 <style src="./Picture.style.scss" lang="sass" scoped />
 
 <script setup lang="ts">
-import { PictureType } from './Picture.type'
+import { PictureComponentType } from './Picture.type'
 
-const { src, alt, rounded, roundedSquare, centered } =
-  defineProps<PictureType>()
+const { src, alt, rounded, roundedEdges, centered } =
+  defineProps<PictureComponentType>()
 </script>
 
 <template>
@@ -16,7 +16,7 @@ const { src, alt, rounded, roundedSquare, centered } =
         [
           rounded ? 'rounded' : '',
           centered ? 'centered' : '',
-          roundedSquare ? 'roundedSquare' : ''
+          roundedEdges ? 'roundedEdges' : ''
         ].join(' ')
       "
     />

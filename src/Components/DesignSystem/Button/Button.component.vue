@@ -1,9 +1,9 @@
 <style src="./Button.style.scss" lang="sass" scoped />
 
 <script setup lang="ts">
-import { ButtonType } from './Button.type'
+import { ButtonComponentType } from './Button.type'
 
-const { type, disabled } = defineProps<ButtonType>()
+const { type, disabled } = defineProps<ButtonComponentType>()
 </script>
 
 <template>

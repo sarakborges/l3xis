@@ -1,9 +1,9 @@
 <style src="./Link.style.scss" lang="sass" scoped />
 
 <script setup lang="ts">
-import { LinkType } from './Link.type'
+import { LinkComponentType } from './Link.type'
 
-const { name, params } = defineProps<LinkType>()
+const { name, params } = defineProps<LinkComponentType>()
 </script>
 
 <template>

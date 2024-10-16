@@ -1,0 +1,30 @@
+#friends-page {
+  display: flex;
+  place-content: center;
+
+  min-height: calc(100vh - var(--size-xl));
+  padding: var(--size-lg) 0;
+
+  background-color: var(--color-main-dark);
+
+  .friends-content {
+    display: flex;
+    gap: var(--size-lg);
+
+    width: var(--body-wrapper-size);
+    padding: 0 var(--size-md);
+
+    .friends-list-wrapper {
+      display: flex;
+      flex-flow: column;
+      gap: var(--size-smd);
+
+      flex: 1;
+
+      > :is(h1) {
+        font-size: var(--size-lmd);
+        color: var(--color-white);
+      }
+    }
+  }
+}

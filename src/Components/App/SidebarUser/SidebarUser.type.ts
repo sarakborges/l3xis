@@ -1,3 +1,3 @@
-export type SidebarUserType = {
+export type SidebarUserComponentType = {
   isHome?: boolean
 }

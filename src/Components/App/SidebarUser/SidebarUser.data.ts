@@ -28,20 +28,38 @@ export const SIDEBAR_MENU = [
 
 export const SIDEBAR_MENU_HOME = [
   {
+    ICON: 'fa-home',
+    TEXT: `Home`,
+    TO: ROUTE_NAMES.HOME
+  },
+
+  {
     ICON: 'bi-person-fill',
-    TEXT: `Go to profile`,
+    TEXT: `About`,
     TO: ROUTE_NAMES.PROFILE
   },
 
   {
     ICON: 'co-list-rich',
     TEXT: `Feed`,
-    TO: ROUTE_NAMES.HOME
+    TO: ROUTE_NAMES.PROFILE
   },
 
   {
     ICON: 'bi-camera-fill',
     TEXT: `Photos`,
-    TO: ROUTE_NAMES.HOME
+    TO: ROUTE_NAMES.PROFILE
+  },
+
+  {
+    ICON: 'bi-people-fill',
+    TEXT: `Friends`,
+    TO: ROUTE_NAMES.PROFILE
+  },
+
+  {
+    ICON: 'hi-solid-user-group',
+    TEXT: `Groups`,
+    TO: ROUTE_NAMES.PROFILE
   }
 ]

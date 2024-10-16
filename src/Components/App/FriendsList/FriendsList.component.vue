@@ -1,9 +1,12 @@
 <script setup lang="ts">
-import { FriendsListType } from './FriendsList.type'
+import { FriendsListComponentType } from './FriendsList.type'
 
 import { ROUTE_NAMES } from '@/Utils/Data/RouteNames.data'
 
 import { ProfileType } from '@/Utils/Types/Profile.type'
+
+import ActiveProfileStore from '@/Stores/ActiveProfile.store'
+import ProfileStore from '@/Stores/Profile.store'
 
 import {
   FRIENDS_LIST_EMPTY,
@@ -14,7 +17,10 @@ import {
 
 import List from '@/Components/App/List/List.component.vue'
 
-const { isHome, friends } = defineProps<FriendsListType>()
+const { isHome } = defineProps<FriendsListComponentType>()
+
+const { activeProfileData } = ActiveProfileStore
+const { profileData } = ProfileStore
 
 const mapFriends = (friends: Array<ProfileType>) => {
   if (!Boolean(friends)) {
@@ -34,8 +40,10 @@ const mapFriends = (friends: Array<ProfileType>) => {
     :title="FRIENDS_LIST_TITLE"
     :emptyText="isHome ? FRIENDS_LIST_EMPTY : PROFILE_FRIENDS_LIST_EMPTY"
     :moreText="FRIENDS_LIST_MORE"
-    :list="mapFriends(friends)"
-    :linkTo="ROUTE_NAMES.PROFILE"
+    :list="
+      mapFriends(isHome ? activeProfileData?.friends : profileData?.friends)
+    "
+    :linkTo="ROUTE_NAMES.FRIENDS"
     :maxItems="9"
   />
 </template>

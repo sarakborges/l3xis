@@ -21,11 +21,11 @@ const { activeProfileData } = ActiveProfileStore
     <main id="home-page">
       <section class="home-content" v-if="activeProfileData?.id">
         <SidebarUser isHome />
-        <Feed />
+        <Feed :profile="activeProfileData" />
 
         <section class="home-lists">
-          <FriendsList isHome :friends="activeProfileData?.friends" />
-          <GroupsList isHome :groups="activeProfileData?.groups" />
+          <FriendsList isHome />
+          <GroupsList isHome />
         </section>
       </section>
     </main>

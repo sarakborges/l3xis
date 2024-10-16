@@ -1,6 +1,6 @@
 import { ListItemType } from '@/Utils/Types/List.type'
 
-export type ListType = {
+export type ListComponentType = {
   title: string
   emptyText: string
   moreText: string

@@ -1,6 +1,3 @@
-import { ProfileType } from '@/Utils/Types/Profile.type'
-
-export type FriendsListType = {
+export type FriendsListComponentType = {
   isHome?: boolean
-  friends: Array<ProfileType>
 }

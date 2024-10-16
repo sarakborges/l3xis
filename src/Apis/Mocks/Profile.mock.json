@@ -19,7 +19,9 @@
       { "id": "mahito" }
     ],
 
-    "groups": [{ "id": "jujutsu-kaizen" }]
+    "groups": [{ "id": "jujutsu-kaizen" }],
+
+    "feed": [{ "id": "1" }, { "id": "2" }]
   },
 
   {

@@ -1,9 +1,12 @@
 <script setup lang="ts">
-import { GroupsListType } from './GroupsList.type'
+import { GroupsListComponentType } from './GroupsList.type'
 
 import { ROUTE_NAMES } from '@/Utils/Data/RouteNames.data'
 
 import { GroupType } from '@/Utils/Types/Group.type'
+
+import ActiveProfileStore from '@/Stores/ActiveProfile.store'
+import ProfileStore from '@/Stores/Profile.store'
 
 import {
   GROUPS_LIST_EMPTY,
@@ -14,7 +17,10 @@ import {
 
 import List from '@/Components/App/List/List.component.vue'
 
-const { isHome, groups } = defineProps<GroupsListType>()
+const { isHome } = defineProps<GroupsListComponentType>()
+
+const { activeProfileData } = ActiveProfileStore
+const { profileData } = ProfileStore
 
 const mapGroups = (groups: Array<GroupType>) => {
   if (!Boolean(groups)) {
@@ -34,7 +40,7 @@ const mapGroups = (groups: Array<GroupType>) => {
     :title="GROUPS_LIST_TITLE"
     :emptyText="isHome ? GROUPS_LIST_EMPTY : PROFILE_GROUPS_LIST_EMPTY"
     :moreText="GROUPS_LIST_MORE"
-    :list="mapGroups(groups)"
+    :list="mapGroups(isHome ? activeProfileData?.groups : profileData?.groups)"
     :linkTo="ROUTE_NAMES.PROFILE"
     :maxItems="9"
   />

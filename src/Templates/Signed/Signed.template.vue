@@ -5,12 +5,8 @@ import ActiveProfileStore from '@/Stores/ActiveProfile.store'
 
 const { getActiveProfileData } = ActiveProfileStore
 
-const loadProfileData = async () => {
-  await getActiveProfileData()
-}
-
 onMounted(async () => {
-  await loadProfileData()
+  await getActiveProfileData()
 })
 </script>
 

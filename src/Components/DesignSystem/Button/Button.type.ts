@@ -1,4 +1,4 @@
-export type ButtonType = {
+export type ButtonComponentType = {
   type?: 'button' | 'submit' | 'reset'
   primary?: boolean
   secondary?: boolean

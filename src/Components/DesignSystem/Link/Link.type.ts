@@ -1,6 +1,6 @@
 import { RouteRecordNameGeneric } from 'vue-router'
 
-export type LinkType = {
+export type LinkComponentType = {
   name: RouteRecordNameGeneric
   params?: any
   button?: boolean

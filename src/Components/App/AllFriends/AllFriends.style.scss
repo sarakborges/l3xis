@@ -1,0 +1,42 @@
+.friends-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--size-md) var(--size-lg);
+
+  > li {
+    width: calc(50% - var(--size-lg) / 2);
+
+    > a {
+      display: flex;
+      place-items: center;
+      gap: var(--size-sm);
+
+      border-radius: var(--size-sm);
+
+      transition: background-color 0.3s;
+
+      &:not(.button):hover {
+        background-color: var(--color-accent);
+        text-decoration: none;
+      }
+
+      > picture {
+        > :is(img) {
+          width: calc(var(--size-xl) * 1.5);
+          height: calc(var(--size-xl) * 1.5);
+        }
+      }
+
+      > section {
+        display: flex;
+        flex-flow: column;
+        gap: var(--size-sm);
+
+        > :is(span) {
+          color: var(--color-white);
+          font-size: var(--size-smd);
+        }
+      }
+    }
+  }
+}

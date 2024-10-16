@@ -1,7 +1,7 @@
-export type PictureType = {
+export type PictureComponentType = {
   src: string
   alt: string
   rounded?: boolean
-  roundedSquare?: boolean
+  roundedEdges?: boolean
   centered?: boolean
 }

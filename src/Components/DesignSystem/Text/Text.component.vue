@@ -1,9 +1,9 @@
 <style src="./Text.style.scss" lang="sass" scoped />
 
 <script setup lang="ts">
-import { TextType } from './Text.type'
+import { TextComponentType } from './Text.type'
 
-const { as } = defineProps<TextType>()
+const { as } = defineProps<TextComponentType>()
 </script>
 
 <template>
