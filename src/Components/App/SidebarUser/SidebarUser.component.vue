@@ -71,8 +71,7 @@ const profileInfo = isHome ? activeProfileData : profileData
           <li v-for="menu_item in SIDEBAR_MENU_HOME">
             <Link
               :name="menu_item.TO"
-              :params="{ url: profileInfo.url }"
-              :class="menu_item.TO === ROUTE_NAMES.HOME ? 'active' : ''"
+              :params="{ url: profileInfo.url, page: 1 }"
             >
               <v-icon :name="menu_item.ICON" />
               <Text as="span">{{ menu_item.TEXT }}</Text>

@@ -21,20 +21,31 @@
           flex-flow: column;
           gap: var(--size-sm);
 
-          > a {
-            color: var(--color-main-light);
-          }
-
           > :is(span) {
             color: var(--color-white);
-            font-size: var(--size-smd);
+
+            &:last-child {
+              font-size: var(--size-smd);
+            }
+
+            > a {
+              color: var(--color-main-light);
+            }
           }
         }
 
-        > :is(picture) {
-          > :is(img) {
-            width: var(--size-xl);
-            height: var(--size-xl);
+        > a {
+          transition: opacity 0.3s;
+
+          &:hover {
+            opacity: 0.5;
+          }
+
+          > :is(picture) {
+            > :is(img) {
+              width: var(--size-xl);
+              height: var(--size-xl);
+            }
           }
         }
       }

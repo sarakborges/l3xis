@@ -40,8 +40,10 @@ const mapGroups = (groups: Array<GroupType>) => {
     :title="GROUPS_LIST_TITLE"
     :emptyText="isHome ? GROUPS_LIST_EMPTY : PROFILE_GROUPS_LIST_EMPTY"
     :moreText="GROUPS_LIST_MORE"
+    :url="isHome ? activeProfileData?.url : profileData?.url"
     :list="mapGroups(isHome ? activeProfileData?.groups : profileData?.groups)"
     :linkTo="ROUTE_NAMES.PROFILE"
+    :linkToAll="ROUTE_NAMES.GROUPS"
     :maxItems="9"
   />
 </template>

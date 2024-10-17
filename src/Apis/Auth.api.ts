@@ -1,4 +1,4 @@
-import userMock from '@/Apis/Mocks/User.mock.json'
+import userMock from '@/Assets/Mocks/User.mock.json'
 
 import { simpleRequest } from '@/Apis/Request.api'
 

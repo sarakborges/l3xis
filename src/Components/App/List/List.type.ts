@@ -7,4 +7,6 @@ export type ListComponentType = {
   list: Array<ListItemType>
   maxItems: number
   linkTo: string
+  linkToAll: string
+  url: string
 }

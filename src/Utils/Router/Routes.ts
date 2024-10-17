@@ -8,6 +8,7 @@ import HomePage from '@/Pages/Home/Home.page.vue'
 import LoginPage from '@/Pages/Login/Login.page.vue'
 import ProfilePage from '@/Pages/Profile/Profile.page.vue'
 import FriendsPage from '@/Pages/Friends/Friends.page.vue'
+import GroupsPage from '@/Pages/Groups/Groups.page.vue'
 
 export const HOME: RouteRecordRaw = {
   path: '/',
@@ -49,4 +50,14 @@ export const FRIENDS: RouteRecordRaw = {
   }
 }
 
-export default [HOME, LOGIN, PROFILE, FRIENDS]
+export const GROUPS: RouteRecordRaw = {
+  path: '/profile/:url/groups/page=:page?',
+  name: ROUTE_NAMES.GROUPS,
+  component: GroupsPage,
+
+  beforeEnter: (to) => {
+    document.title = `${APP_NAME} - @${to.params.url} - Groups`
+  }
+}
+
+export default [HOME, LOGIN, PROFILE, FRIENDS, GROUPS]

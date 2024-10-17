@@ -1,6 +1,6 @@
 import { ref } from 'vue'
 
-import userMock from '@/Apis/Mocks/User.mock.json'
+import userMock from '@/Assets/Mocks/User.mock.json'
 
 import { LOCAL_ACTIVE_PROFILE_KEY } from '@/Utils/Data/LocalStorageKeys.data'
 

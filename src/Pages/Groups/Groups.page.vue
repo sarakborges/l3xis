@@ -1,4 +1,4 @@
-<style src="./Friends.style.scss" lang="sass" scoped />
+<style src="./Groups.style.scss" lang="sass" scoped />
 
 <script setup lang="ts">
 import { onMounted, onUpdated } from 'vue'
@@ -6,10 +6,10 @@ import { useRoute } from 'vue-router'
 
 import { ROUTE_NAMES } from '@/Utils/Data/RouteNames.data'
 
-import { PROFILE_FRIENDS_LIST_EMPTY } from '@/Utils/Texts/App.texts'
+import { PROFILE_GROUPS_LIST_EMPTY } from '@/Utils/Texts/App.texts'
 
 import ProfileStore from '@/Stores/Profile.store'
-import FriendsPaginationStore from '@/Stores/FriendsPagination.store'
+import GroupsPaginationStore from '@/Stores/GroupsPagination.store'
 
 import SignedTemplate from '@/Templates/Signed/Signed.template.vue'
 
@@ -18,7 +18,7 @@ import Text from '@/Components/DesignSystem/Text/Text.component.vue'
 
 import Topbar from '@/Components/App/Topbar/Topbar.component.vue'
 import SidebarUser from '@/Components/App/SidebarUser/SidebarUser.component.vue'
-import AllFriends from '@/Components/App/AllFriends/AllFriends.component.vue'
+import AllGroups from '@/Components/App/AllGroups/AllGroups.component.vue'
 
 const route = useRoute()
 
@@ -33,7 +33,7 @@ const {
   getCurrentPage,
   updatePaginationData,
   createPagination
-} = FriendsPaginationStore
+} = GroupsPaginationStore
 
 const { url } = route.params
 
@@ -54,18 +54,18 @@ onUpdated(async () => {
   <SignedTemplate>
     <Topbar />
 
-    <main id="friends-page">
-      <section class="friends-content" v-if="profileData?.id">
+    <main id="groups-page">
+      <section class="groups-content" v-if="profileData?.id">
         <SidebarUser />
 
         <main
-          class="friends-list-wrapper"
-          v-if="!isLoading && Number(profileData?.friends?.length > 0)"
+          class="groups-list-wrapper"
+          v-if="!isLoading && Number(profileData?.groups?.length > 0)"
         >
-          <Text as="h1">@{{ profileData.url }}'s friends</Text>
+          <Text as="h1">@{{ profileData.url }}'s groups</Text>
 
           <PaginatedList
-            :linkTo="ROUTE_NAMES.FRIENDS"
+            :linkTo="ROUTE_NAMES.GROUPS"
             :linkParams="{ url: profileData.url }"
             :currentPage="currentPage"
             :totalPages="totalPages"
@@ -77,15 +77,15 @@ onUpdated(async () => {
             :getCurrentPage="getCurrentPage"
             :createPagination="createPagination"
           >
-            <AllFriends />
+            <AllGroups />
           </PaginatedList>
         </main>
 
         <Text
           as="p"
-          v-if="!isLoading && Number(profileData?.friends?.length < 1)"
+          v-if="!isLoading && Number(profileData?.groups?.length < 1)"
         >
-          {{ PROFILE_FRIENDS_LIST_EMPTY }}
+          {{ PROFILE_GROUPS_LIST_EMPTY }}
         </Text>
       </section>
     </main>

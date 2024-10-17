@@ -3,8 +3,6 @@
 <script setup lang="ts">
 import { ListComponentType } from './List.type'
 
-import ActiveProfileStore from '@/Stores/ActiveProfile.store'
-
 import Tooltip from '@/Components/DesignSystem/Tooltip/Tooltip.component.vue'
 import Link from '@/Components/DesignSystem/Link/Link.component.vue'
 import Picture from '@/Components/DesignSystem/Picture/Picture.component.vue'
@@ -16,9 +14,10 @@ const {
   moreText,
   list,
   maxItems = 9,
-  linkTo
+  linkTo,
+  linkToAll,
+  url
 } = defineProps<ListComponentType>()
-const { activeProfileData } = ActiveProfileStore
 </script>
 
 <template>
@@ -44,10 +43,11 @@ const { activeProfileData } = ActiveProfileStore
       <Link
         v-if="Boolean(list?.length)"
         as="span"
-        :name="linkTo"
-        :params="{ url: activeProfileData.url }"
-        >{{ moreText }}</Link
+        :name="linkToAll"
+        :params="{ url: url, page: 1 }"
       >
+        {{ moreText }}
+      </Link>
       <Text as="span" v-if="!Boolean(list?.length)">{{ emptyText }}</Text>
     </section>
   </aside>

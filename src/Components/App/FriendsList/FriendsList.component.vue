@@ -40,10 +40,12 @@ const mapFriends = (friends: Array<ProfileType>) => {
     :title="FRIENDS_LIST_TITLE"
     :emptyText="isHome ? FRIENDS_LIST_EMPTY : PROFILE_FRIENDS_LIST_EMPTY"
     :moreText="FRIENDS_LIST_MORE"
+    :url="isHome ? activeProfileData?.url : profileData?.url"
     :list="
       mapFriends(isHome ? activeProfileData?.friends : profileData?.friends)
     "
-    :linkTo="ROUTE_NAMES.FRIENDS"
+    :linkTo="ROUTE_NAMES.PROFILE"
+    :linkToAll="ROUTE_NAMES.FRIENDS"
     :maxItems="9"
   />
 </template>

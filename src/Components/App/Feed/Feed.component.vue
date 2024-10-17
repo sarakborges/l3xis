@@ -34,17 +34,21 @@ const formatDate = (date: Date | string) => {
     <ul class="feed-list">
       <li class="feed-item" v-for="listItem in profile.feed">
         <header>
-          <Picture
-            :src="profile.picture"
-            :alt="profile.name"
-            roundedEdges
-            centered
-          />
+          <Link :name="ROUTE_NAMES.PROFILE" :params="{ url: profile.id }">
+            <Picture
+              :src="profile.picture"
+              :alt="profile.name"
+              roundedEdges
+              centered
+            />
+          </Link>
 
           <section>
-            <Link :name="ROUTE_NAMES.PROFILE" :params="{ url: profile.id }">
-              {{ profile.name }}
-            </Link>
+            <Text as="span">
+              <Link :name="ROUTE_NAMES.PROFILE" :params="{ url: profile.id }">
+                {{ profile.name }}
+              </Link>
+            </Text>
 
             <Text as="span">{{ formatDate(listItem.time!) }}</Text>
           </section>

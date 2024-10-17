@@ -1,6 +1,6 @@
-import profileMock from '@/Apis/Mocks/Profile.mock.json'
-import groupMock from '@/Apis/Mocks/Group.mock.json'
-import feedMock from '@/Apis/Mocks/Feed.mock.json'
+import profileMock from '@/Assets/Mocks/Profile.mock.json'
+import groupMock from '@/Assets/Mocks/Group.mock.json'
+import feedMock from '@/Assets/Mocks/Feed.mock.json'
 
 import { paginatedRequest, simpleRequest } from '@/Apis/Request.api'
 

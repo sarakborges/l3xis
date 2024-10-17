@@ -23,6 +23,18 @@ export const SIDEBAR_MENU = [
     ICON: 'bi-camera-fill',
     TEXT: `Photos`,
     TO: ROUTE_NAMES.HOME
+  },
+
+  {
+    ICON: 'bi-people-fill',
+    TEXT: `Friends`,
+    TO: ROUTE_NAMES.FRIENDS
+  },
+
+  {
+    ICON: 'hi-solid-user-group',
+    TEXT: `Groups`,
+    TO: ROUTE_NAMES.GROUPS
   }
 ]
 
@@ -54,12 +66,12 @@ export const SIDEBAR_MENU_HOME = [
   {
     ICON: 'bi-people-fill',
     TEXT: `Friends`,
-    TO: ROUTE_NAMES.PROFILE
+    TO: ROUTE_NAMES.FRIENDS
   },
 
   {
     ICON: 'hi-solid-user-group',
     TEXT: `Groups`,
-    TO: ROUTE_NAMES.PROFILE
+    TO: ROUTE_NAMES.GROUPS
   }
 ]
